@@ -1,0 +1,20 @@
+{
+  "modelId": "us.meta.llama3-1-8b-instruct-v1:0",
+  "contentType": "application/json",
+  "accept": "application/json",
+  "body": "{\"prompt\":\"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\nWhat is Amazon Bedrock?\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\",\"temperature\":0.5,\"top_p\":0.9,\"max_gen_len\":200}"
+}
+
+{
+  "modelId": "us.anthropic.claude-3-5-haiku-20241022-v1:0",
+  "contentType": "application/json",
+  "accept": "application/json",
+  "body": "{\"prompt\":\"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\nWhat is Amazon Bedrock?\n<|eot_id|><|start_header_id|>assistant<|end_header_id|>\",\"temperature\":0.5,\"top_p\":0.9,\"max_gen_len\":200}"
+}
+
+{
+  "modelId": "amazon.titan-image-generator-v2:0",
+  "contentType": "application/json",
+  "accept": "application/json",
+  "body": "{\"taskType\":\"TEXT_IMAGE\",\"textToImageParams\":{\"text\":\"A futuristic city at sunset\"},\"imageGenerationConfig\":{\"numberOfImages\":1,\"height\":1024,\"width\":1024,\"cfgScale\":8}}"
+}

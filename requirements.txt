@@ -1,2 +1,10 @@
 boto3
 awscli
+pypdf
+langchain
+streamlit
+faiss-cpu
+langchain-community
+langchain-text-splitters
+numpy
+langchain-aws

@@ -1,2 +1,4 @@
 ./venvbed
 venvbed
+faiss_index/
+data/

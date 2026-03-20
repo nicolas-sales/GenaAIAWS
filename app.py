@@ -66,6 +66,8 @@ def get_claud_llm():
     llm=ChatBedrock(model_id="us.anthropic.claude-3-5-haiku-20241022-v1:0",client=bedrock,model_kwargs={"max_tokens":512})
     return llm
 
+# Llama LLM
+
 def get_llama3_llm():
     #llm=Bedrock(model_id="us.meta.llama3-1-8b-instruct-v1:0",client=bedrock,model_kwargs={"max_gen_len":512})
     llm=ChatBedrock(model_id="us.meta.llama3-1-8b-instruct-v1:0",client=bedrock,model_kwargs={"max_gen_len":512})

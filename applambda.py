@@ -1,7 +1,6 @@
 import boto3
 import botocore.config
 import json
-import response
 
 def blog_generate_using_bedrock(blogtopic:str)-> str:
     prompt=f"""                                      
@@ -20,12 +19,12 @@ def blog_generate_using_bedrock(blogtopic:str)-> str:
     try:
         bedrock=boto3.client(service_name="bedrock-runtime",region_name="us-east-1",config=botocore.config.Config(read_timeout=300,retries={"max_attempts":3}))
 
-        bedrock.invoke_model(
+        response=bedrock.invoke_model(
         body=json.dumps(body),
         modelId="us.meta.llama3-1-8b-instruct-v1:0")
 
         response_content=response.get("body").read()
-        response_data=json.loads(response)
+        response_data=json.loads(response_content)
         print(response_data)
         blog_details=response_data["generation"]
         return blog_details
